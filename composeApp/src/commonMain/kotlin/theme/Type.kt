@@ -1,4 +1,4 @@
-package desktopThemes.theme
+package theme
 
 import androidx.compose.material3.Typography
 

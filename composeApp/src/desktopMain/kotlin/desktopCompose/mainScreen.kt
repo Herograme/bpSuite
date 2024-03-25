@@ -45,9 +45,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import bpsuite.composeapp.generated.resources.Res
 import bpsuite.composeapp.generated.resources.logo_borges160x160
-import desktopThemes.theme.applyTheme
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.vectorResource
+import theme.applyTheme
 
 @Composable
 fun Dp.dpToPx() = with(LocalDensity.current) { this@dpToPx.toPx() }

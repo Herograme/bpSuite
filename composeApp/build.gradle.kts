@@ -25,6 +25,7 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
+            api(compose.animation)
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
@@ -36,6 +37,9 @@ kotlin {
             implementation("androidx.compose.material3:material3:1.2.1")
             implementation("androidx.compose.material3:material3-window-size-class:1.2.1")
             implementation("androidx.compose.material3:material3-adaptive-navigation-suite:1.0.0-alpha05")
+            api("moe.tlaster:precompose:1.5.11")
+            api("moe.tlaster:precompose-viewmodel:1.5.11")
+            implementation("androidx.compose.material:material-icons-extended")
             //noinspection GradleCompatible
             //implementation("com.android.support:appcompat-v7:28.0.0")
 
@@ -82,6 +86,7 @@ android {
 dependencies {
     implementation(libs.androidx.core)
     implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
 }
 
 compose.desktop {

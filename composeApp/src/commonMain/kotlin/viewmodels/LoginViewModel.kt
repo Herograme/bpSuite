@@ -1,0 +1,6 @@
+package viewmodels
+
+
+class LoginViewModel {
+
+}
